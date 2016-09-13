@@ -5,67 +5,66 @@ import java.util.List;
 
 public class FakeApi {
 	
+	private int temp1 = 500;
+	private int temp2 = 200;
 	
 	public List<String> service1() {
-		System.out.println("servico1 iniciou");	
+		System.out.println("[ service 1 ] Started");	
 		ArrayList<String> list = new ArrayList<String>();
-		list.add("Marcos");
-		list.add("Vinicius");
-		list.add("Soares");
-		list.add("Rua");
-		list.add("Presidente");
-		list.add("Keneddy");
-		list.add("Edil");
-		list.add("System");
+		list.add("São Paulo");
+		list.add("Rio de Janeiro");
+		list.add("Belo Horizonte");
+		list.add("Brasilia");
+		list.add("Florianopolis");
+		list.add("Campinas");
+		list.add("Fortaleza");
+		list.add("Maceio");
 		
 		String x = "";
-		for(int i = 0; i < 500; i++)
-			for(int j = 0; j < 100; j++)
+		for(int i = 0; i < temp1; i++)
+			for(int j = 0; j < temp2; j++)
 					x = x + ".";
 
-		System.out.println("servico1 terminou");
+		System.out.println("[ service 1 ] Finished");
 		return list;
 	}
 	
 	public List<String> service2() {
-		System.out.println("servico2 iniciou");
+		System.out.println("[ service 2 ] Started");	
 		ArrayList<String> list = new ArrayList<String>();
-		list.add("a");
-		list.add("d");
-		list.add("f");
-		list.add("g");
-		list.add("h");
-		list.add("ed");
-		list.add("we");
-		list.add("rr");
+		list.add("Minas Gerais");
+		list.add("Rio de Janeiro");
+		list.add("São Paulo");
+		list.add("Goiás");
+		list.add("Fortaleza");
+		list.add("Santa Catarina");
+		list.add("Alagoas");
+		list.add("Ceará");
 		
 		String x = "";
-		for(int i = 0; i < 500; i++)
-			for(int j = 0; j < 100; j++)
+		for(int i = 0; i < temp1; i++)
+			for(int j = 0; j < temp2; j++)
 					x = x + ".";
 
-		System.out.println("servico2 terminou");
+		System.out.println("[ service 2 ] Finished");
 		return list;
 	}
 	
 	public List<String> service3() {
-		System.out.println("servico3 iniciou");
+		System.out.println("[ service 3 ] Started");	
 		ArrayList<String> list = new ArrayList<String>();
-		list.add("432gfsd");
-		list.add("sfdg43");
-		list.add("fsd");
-		list.add("423");
-		list.add("fsd");
-		list.add("423");
-		list.add("rwe");
-		list.add("rew");
+		list.add("Sudeste");
+		list.add("Centro-Oeste");
+		list.add("Nordeste");
+		list.add("Norte");
+		list.add("Sul");
 		
 		String x = "";
-		for(int i = 0; i < 500; i++)
-			for(int j = 0; j < 100; j++)
+		for(int i = 0; i < temp1; i++)
+			for(int j = 0; j < temp2; j++)
 					x = x + ".";
 		
-		System.out.println("servico3 terminou");
+		System.out.println("[ service 3 ] Finished");	
 		return list;
 	}
 

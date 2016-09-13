@@ -18,7 +18,7 @@ public class NotAsync {
 		
 		long tf = new Timestamp().getDateTime();
 		
-		System.out.println(tf - ti);
+		System.out.println(tf - ti+"ms");
 
 	}
 
