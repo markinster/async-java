@@ -10,7 +10,7 @@ public class FakeApi {
 	public List<String> service1() {
 		System.out.println("[ service 1 ] Started");	
 		
-		sleep(1500);		
+		sleep(300);		
 		
 		ArrayList<String> list = new ArrayList<String>();
 		list.add("São Paulo");
@@ -29,7 +29,7 @@ public class FakeApi {
 	public List<String> service2() {
 		System.out.println("[ service 2 ] Started");
 		
-		sleep(1500);
+		sleep(300);
 		
 		ArrayList<String> list = new ArrayList<String>();
 		list.add("Minas Gerais");
@@ -49,7 +49,7 @@ public class FakeApi {
 	public List<String> service3() {
 		System.out.println("[ service 3 ] Started");
 		
-		sleep(2000);
+		sleep(300);
 		
 		ArrayList<String> list = new ArrayList<String>();
 		list.add("Sudeste");
