@@ -48,7 +48,7 @@ public class AsyncJava8 {
 		} 
 		
 		try {
-			
+			System.out.println("########");	
 			sendToView(serviceFuture1.get());
 			sendToView(serviceFuture2.get());
 			sendToView(serviceFuture3.get());
