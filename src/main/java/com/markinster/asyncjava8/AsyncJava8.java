@@ -26,17 +26,17 @@ public class AsyncJava8 {
 		CompletableFuture<List<String>> serviceFuture1 = CompletableFuture.supplyAsync(() -> {
 			List<String> list = api.service1();
 			return list;
-		});
+		}, ex);
 
 		CompletableFuture<List<String>> serviceFuture2 = CompletableFuture.supplyAsync(() -> {
 			List<String> list = api.service2();
 			return list;
-		});
+		}, ex);
 
 		CompletableFuture<List<String>> serviceFuture3 = CompletableFuture.supplyAsync(() -> {
 			List<String> list = api.service3();
 			return list;
-		});
+		}, ex);
 		
 		
 		CompletableFuture<Void> all = CompletableFuture.allOf(serviceFuture1, serviceFuture2, serviceFuture3);
